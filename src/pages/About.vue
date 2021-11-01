@@ -1,11 +1,10 @@
 <template>
-  <h1>这是关于页面</h1>
+  <h1 @click="toggle">这是关于页面</h1>
 </template>
 
-<script>
-export default {
-  name: "About"
-}
+<script setup>
+import { useFullscreen } from '@vueuse/core'
+const { isFullscreen, enter, exit, toggle } = useFullscreen()
 </script>
 
 <style scoped>
