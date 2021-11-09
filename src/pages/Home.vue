@@ -4,6 +4,7 @@
   <TodoList />
   <h1>你的评分是 {{score}}</h1>
   <Rate v-model="score" theme="red" />
+  <Count></Count>
 </template>
 
 <script setup>
@@ -12,6 +13,8 @@ import Rate from '../components/Rate.vue'
 import {useMouse} from "../utils/mouse";
 
 import {ref} from "vue";
+import Count from '../components/Count.vue'
+
 let score = ref(3.5)
 
 function update(num) {
