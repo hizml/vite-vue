@@ -1,5 +1,5 @@
-// import {createRouter, createWebHashHistory} from 'vue-router'
-import {createRouter, createWebHashHistory} from './grouter/index'
+import {createRouter, createWebHashHistory} from 'vue-router'
+// import {createRouter, createWebHashHistory} from './grouter/index'
 
 import Home from '../pages/Home.vue'
 import About from '../pages/About.vue'

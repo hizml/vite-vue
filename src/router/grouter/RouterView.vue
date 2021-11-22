@@ -13,6 +13,7 @@ const comp = computed(() => {
   const route = router.routes.find((route) => route.path === router.current.value)
   return route ? router.component : null
 })
+
 </script>
 
 <style scoped>
